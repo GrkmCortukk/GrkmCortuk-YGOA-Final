@@ -1,7 +1,0 @@
-language: java
-script: 
-  - "mvn -f SpringBootRestApiFinal/pom.xml clean install cobertura:cobertura"
-jdk:
-  - openjdk8
-after_success:
-  - bash <(curl -s https://codecov.io/bash)  
